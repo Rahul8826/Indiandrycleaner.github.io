@@ -25,7 +25,9 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+ 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -36,9 +38,32 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<script>
+ $(".btn btn-secondary").click(function(){
+    $("#checkpricingModal").hide();
+ });
+</script>
 
 <body>
-
+  <div class="modal fade" id="checkpricingModal" tabindex="-1" aria-labelledby="checkpricingModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkpricingModalLabel">Pricing</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
@@ -283,7 +308,7 @@
                 <small class="text-muted">Last updated 3 mins ago</small>
               </div-->
             </div>
-            
+
 
           </div>
         </div>
@@ -634,8 +659,8 @@
               <h4>Jackets</h4>
               <!--p>Shirt</p-->
               <a href="assets/img/portfolio/jack1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Jacket"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -645,8 +670,8 @@
               <h4>Curtains</h4>
               <!--p>Web</p-->
               <a href="assets/img/portfolio/curtains.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Curtains"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -656,8 +681,8 @@
               <h4>Shirts</h4>
               <!--p>App</p-->
               <a href="assets/img/portfolio/shirt1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Shirt"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -667,8 +692,8 @@
               <h4>Jackets</h4>
               <!--p>Card</p-->
               <a href="assets/img/portfolio/jack1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Jacket"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -678,8 +703,8 @@
               <h4>Polyster Curtains</h4>
               <!--p>Web</p-->
               <a href="assets/img/portfolio/curtains3.jpeg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Cutains"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -687,10 +712,10 @@
             <img src="assets/img/portfolio/shirt3.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Shirts</h4>
-              <p>App</p>
+              <!--p>App</p-->
               <a href="assets/img/portfolio/shirt3.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Shirt"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -700,8 +725,8 @@
               <h4>Puffed Jackets</h4>
               <!--p>Card</p-->
               <a href="assets/img/portfolio/jack.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Jacket"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -711,8 +736,8 @@
               <h4>Leather Jackets</h4>
               <!--p>Card</p-->
               <a href="assets/img/portfolio/jacket.jpg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="Jacket"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -722,8 +747,8 @@
               <h4>Plain Curtain</h4>
               <!--p>Web</p-->
               <a href="assets/img/portfolio/curtain1.jpeg" data-gall="portfolioGallery" class="venobox preview-link"
-                title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                title="curtain"><i class="bx bx-plus"></i></a>
+              <!--a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a-->
             </div>
           </div>
 
@@ -854,26 +879,7 @@
             </div>
           </div>
 
-          <!-- Check pricingModal -->
-          <div class="modal fade" id="checkpricingModal" tabindex="-1" aria-labelledby="checkpricingModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="checkpricingModalLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
-                      aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
@@ -1044,7 +1050,8 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>Shop no. 1, Ardee City Gate No. 2, near Ardee mall, Block B, Ardee City, Sector 52, Gurugram, Haryana 122003</p>
+              <p>Shop no. 1, Ardee City Gate No. 2, near Ardee mall, Block B, Ardee City, Sector 52, Gurugram, Haryana
+                122003</p>
             </div>
           </div>
 
@@ -1191,6 +1198,7 @@
 
     </div>
   </footer><!-- End Footer -->
+  <!-- Check pricingModal -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
@@ -1206,6 +1214,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
