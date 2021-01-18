@@ -38,12 +38,6 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-<script>
- $(".btn btn-secondary").click(function(){
-    $("#checkpricingModal").hide();
- });
-</script>
-
 <body>
   <div class="modal fade" id="checkpricingModal" tabindex="-1" aria-labelledby="checkpricingModalLabel"
     aria-hidden="true">
@@ -51,15 +45,54 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="checkpricingModalLabel">Pricing</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+          <button type="button" class="btn-close btn-mod" data-bs-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
         </div>
         <div class="modal-body">
-          ...
+          <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+            <table>
+              <tr>
+                <th>Mens Clothing</th>
+                <th>Pricing</th>
+              </tr>
+              <tr>
+                <td>Shirts</td>
+                <td class="font-weight-bolder" style="color: blue;">₹59</td>
+                
+              </tr>
+              <tr>
+                <td>T-Shrits</td>
+                <td class="font-weight-bolder" style="color: blue;">₹49</td>
+                
+              </tr>
+              <tr>
+                <td>Leather Jackets</td>
+                <td class="font-weight-bolder" style="color: blue;">₹259</td>
+                
+              </tr>
+              
+              </tr>
+            </table>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-success btn-off" data-bs-dismiss="modal">Close</button>
+          <!--button type="button" class="btn btn-primary">Save changes</button-->
         </div>
       </div>
     </div>
@@ -865,13 +898,14 @@
             <div class="box">
               <h3>Mens Clothing Price</h3>
               <!--h4><sup>$</sup>0<span> / mon>th</span></h4-->
-              <ul>
+              <!--ul>
                 <li class="font-weight-bold">Shirts<a class="font-weight-bolder" style="color: blue;">₹59</a></li>
                 <li class="font-weight-bold">T-shirts<a class="font-weight-bolder" style="color: blue;">₹49</a></li>
                 <li class="font-weight-bold">Jackets<a class="font-weight-bolder" style="color: blue;">₹159</a></li>
                 <li class="font-weight-bold">Suit<a class="font-weight-bolder" style="color: blue;">₹569</a></li>
                 <li class="font-weight-bold">Sweater<a class="font-weight-bolder" style="color: blue;">₹259</a></li>
-              </ul>
+              </ul-->
+              <img  src="assets/img/portfolio/shirt1.jpg" class="img-fluid" alt=""><hr>
               <div class="mx-2">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#checkpricingModal">Check
                   Pricing</button>
@@ -885,17 +919,19 @@
             <div class="box">
               <h3>Womens Clothing Price</h3>
               <!--h4><sup>$</sup>19<span> / month</span></h4-->
-              <ul>
+              <!--ul>
                 <li class="font-weight-bold">Saree<a class="font-weight-bolder" style="color: blue;">₹79</a></li>
                 <li class="font-weight-bold">Lehnga<a class="font-weight-bolder" style="color: blue;">₹89</a></li>
                 <li class="font-weight-bold">Sweater<a class="font-weight-bolder" style="color: blue;">₹99</a></li>
                 <li class="font-weight-bold">Saree-Designer<a class="font-weight-bolder" style="color: blue;">₹109</a>
                 </li>
                 <li class="font-weight-bold">Shawl<a class="font-weight-bolder" style="color: blue;">₹69</a></li>
-              </ul>
-              <!--div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div-->
+              </ul-->
+              <img src="assets/img/portfolio/jack1.jpg" class="img-fluid" alt=""><hr>
+              <div class="mx-2">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#checkpricingModal">Check
+                  Pricing</button>
+              </div>
             </div>
           </div>
 
@@ -903,7 +939,7 @@
             <div class="box">
               <h3>Household & Non Wearable price</h3>
               <!--h4><sup>$</sup>29<span> / month</span></h4-->
-              <ul>
+              <!--ul>
                 <li class="font-weight-bold">Curtains<a class="font-weight-bolder" style="color: blue;">₹190</a></li>
                 <li class="font-weight-bold">Bedsheet-single<a class="font-weight-bolder" style="color: blue;">₹179</a>
                 </li>
@@ -913,10 +949,12 @@
                 </li>
                 <li class="font-weight-bold">Car-covers<a class="font-weight-bolder" style="color: blue;">₹400</a>
                 </li>
-              </ul>
-              <!--div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div-->
+              </ul-->
+              <img class= "bd-placeholder-img" width="245px" height="223px" src="assets/img/portfolio/cover.jpg" class="img-fluid" alt=""><hr>
+              <div class="mx-2">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#checkpricingModal">Check
+                  Pricing</button>
+              </div>
             </div>
           </div>
 
@@ -1219,7 +1257,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    $(".btn-mod").click(function(){
+       $("#checkpricingModal").modal("hide");
+    });
+    $(".btn-off").click(function(){
+      $("#checkpricingModal").modal("hide");
+    });
+   </script>
 </body>
 
 </html>
